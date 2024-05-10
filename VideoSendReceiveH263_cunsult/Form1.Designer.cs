@@ -41,7 +41,7 @@ namespace VideoSendReceiveH263_cunsult
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(981, 129);
+            this.pictureBox2.Location = new System.Drawing.Point(973, 112);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(794, 591);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -52,7 +52,7 @@ namespace VideoSendReceiveH263_cunsult
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label2.Location = new System.Drawing.Point(1294, 70);
+            this.label2.Location = new System.Drawing.Point(408, 59);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 31);
             this.label2.TabIndex = 11;
@@ -62,7 +62,7 @@ namespace VideoSendReceiveH263_cunsult
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label1.Location = new System.Drawing.Point(353, 70);
+            this.label1.Location = new System.Drawing.Point(1299, 59);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 31);
             this.label1.TabIndex = 10;
@@ -71,28 +71,28 @@ namespace VideoSendReceiveH263_cunsult
             // linkBtn
             // 
             this.linkBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.linkBtn.Location = new System.Drawing.Point(1152, 763);
+            this.linkBtn.Location = new System.Drawing.Point(1144, 754);
             this.linkBtn.Name = "linkBtn";
             this.linkBtn.Size = new System.Drawing.Size(430, 103);
             this.linkBtn.TabIndex = 9;
-            this.linkBtn.Text = "고객 화면 연결";
+            this.linkBtn.Text = "상담사 화면 연결";
             this.linkBtn.UseVisualStyleBackColor = true;
             this.linkBtn.Click += new System.EventHandler(this.linkBtn_Click);
             // 
             // startBtn
             // 
             this.startBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.startBtn.Location = new System.Drawing.Point(240, 763);
+            this.startBtn.Location = new System.Drawing.Point(240, 754);
             this.startBtn.Name = "startBtn";
             this.startBtn.Size = new System.Drawing.Size(430, 103);
             this.startBtn.TabIndex = 8;
-            this.startBtn.Text = "상담사 화면 출력";
+            this.startBtn.Text = "고객 화면 출력";
             this.startBtn.UseVisualStyleBackColor = true;
             this.startBtn.Click += new System.EventHandler(this.startBtn_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(54, 129);
+            this.pictureBox1.Location = new System.Drawing.Point(91, 112);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(794, 591);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -111,7 +111,7 @@ namespace VideoSendReceiveH263_cunsult
             this.Controls.Add(this.startBtn);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "고객화면";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

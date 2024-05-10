@@ -134,19 +134,13 @@ namespace VideoSendReceiveH263_cunsult
             var sourcePixelFormat = AVPixelFormat.AV_PIX_FMT_BGR24;
             var destinationSize = sourceSize;
             var destinationPixelFormat = AVPixelFormat.AV_PIX_FMT_YUV420P;
-            var stream = encodeBitmap.ToMat().ToMemoryStream();
             using (var vfc = new VideoFrameConverterCunsult(sourceSize, sourcePixelFormat, destinationSize, destinationPixelFormat))
             {
-                using (var vse = new H263VideoStreamEncoderCunsult(stream, fps, destinationSize))
+                using (var vse = new H263VideoStreamEncoderCunsult(fps, destinationSize))
                 {
                     byte[] bitmapData;
-
-                    using (var frameImage = Image.FromStream(stream))
-                    using (var frameBitmap = frameImage is Bitmap bitmap ? bitmap : new Bitmap(frameImage))
-                    {
-                        bitmapData = GetBitmapData(frameBitmap);
-                    }
-
+                    bitmapData = GetBitmapData(encodeBitmap);
+                    
                     fixed (byte* pBitmapData = bitmapData)
                     {
                         var data = new byte_ptrArray8 { [0] = pBitmapData };

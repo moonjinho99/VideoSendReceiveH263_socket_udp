@@ -20,7 +20,6 @@ namespace VideoSendReceiveH263_cunsult
         private readonly int _linesizeY;
         private readonly AVCodec* _pCodec;
         private readonly AVCodecContext* _pCodecContext;
-        private readonly Stream _stream;
         private readonly int _uSize;
         private readonly int _ySize;
 
@@ -29,9 +28,8 @@ namespace VideoSendReceiveH263_cunsult
             ffmpeg.avcodec_register_all();
         }
 
-        public H263VideoStreamEncoderCunsult(Stream stream, int fps, System.Drawing.Size frameSize)
+        public H263VideoStreamEncoderCunsult(int fps, System.Drawing.Size frameSize)
         {
-            _stream = stream;
             _frameSize = frameSize;
 
             var codecId = AVCodecID.AV_CODEC_ID_H263;
